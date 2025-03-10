@@ -1,10 +1,34 @@
-# Introduction
+# Core Arena
 Core Arena is a PvP game where players can form squads with any ERC-721 NFT, unleash unique skills from each NFT trait, and solo others for staked $CORE.
 
-# Project overall 
+* Website: https://corearena.xyz/
+* Twitter: https://x.com/corearena_xyz
 
-# Architect
+# Contract on Core Mainet:
+* Contract Core Arena: https://scan.coredao.org/address/0x8eF331267028660A38cCd5dd08d9C862e8fBDc56
+* Contract minting NFT for demo: https://scan.coredao.org/address/0xa2C7b5aD89FAF313fD734c1B810583A765048A8b
 
-# Material for Demo
+# Material:
+* Demo video: https://youtu.be/N4CM4wZ_6V0
+* Website: https://corearena.xyz/
+* Full detail submission on Dorahack: https://dorahacks.io/buidl/23763/
 
-# Team info
+# How to run
+Navigate to the folder/app directory
+Run npm install to install dependencies
+Execute npm run dev and visit http://localhost:5173/
+
+# Utilizing Core Chain
+* Use $CORE as stake for each battle, winner takes $CORE from loser
+* Utilizing Core Chain transaction speed with high throughput ensuring seamless and efficient interactions such as: creating matches and challenging others instantly, greatly enhancing the gaming experience.
+
+# Technical Workflow
+* User chooses 3 NFTs then stakes $CORE to contract to create struct with unique battleID in contract
+* Backend verifies on-chain data and creates a queue with that battleID and the NFT squad user chose
+* Other user who joins that battleID must deposit the same amount of money to contract and choose 3 NFTs to battle
+* After verifying on-chain, backend processes battle and returns the signature to address who won to withdraw the stake (the contract nonce prevents reuse key and has rule that only defender or attacker can withdraw money)
+
+# Team
+*  Quan Nguyen: Full-Stack Developer – Leads backend architecture and smart contract implementation.
+*  Duc Nguyen: Smart Contract Developer – Focuses on smart contract optimization and security.
+*  FreakCdev: Front-End Developer & Graphic Designer
