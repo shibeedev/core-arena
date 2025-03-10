@@ -1437,7 +1437,7 @@
                 </div>
                 <div class="flex flex-col mt-[0.6vw]">
                     <span class="text-[0.9vw]">
-                        Submission for Core Global Gaming Hackathon Hackathon
+                        Submission for Core Global Gaming Hackathon
                     </span>
                 </div>
             </div>
