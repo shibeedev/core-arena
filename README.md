@@ -14,9 +14,9 @@ Core Arena is a PvP game where players can form squads with any ERC-721 NFT, unl
 * Full detail submission on Dorahack: https://dorahacks.io/buidl/23763/
 
 # How to run
-Navigate to the folder/app directory
-Run npm install to install dependencies
-Execute npm run dev and visit http://localhost:5173/
+* Navigate to the folder/app directory
+* Run npm install to install dependencies
+* Execute npm run dev and visit http://localhost:5173/
 
 # Utilizing Core Chain
 * Use $CORE as stake for each battle, winner takes $CORE from loser
