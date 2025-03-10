@@ -3,7 +3,7 @@ pragma solidity ^0.8.20;
 
 /**
 * @title IPrizePool
-* @dev Interface for a prize pool contract that manages battle stake transactions
+* @dev Interface for a prize pool contract which manages battle stake transactions
 */
 
 interface IPrizePool {
