@@ -4,6 +4,9 @@ Core Arena is a PvP game where players can form squads with any ERC-721 NFT, unl
 * Website: https://corearena.xyz/
 * Twitter: https://x.com/corearena_xyz
 
+![Battle](/app/static/screenshot2.png)
+![Create a match](/app/static/screenshot1.png)
+
 # Contract on Core Mainet:
 * Contract Core Arena: https://scan.coredao.org/address/0x8eF331267028660A38cCd5dd08d9C862e8fBDc56
 * Contract minting NFT for demo: https://scan.coredao.org/address/0xa2C7b5aD89FAF313fD734c1B810583A765048A8b
@@ -12,6 +15,7 @@ Core Arena is a PvP game where players can form squads with any ERC-721 NFT, unl
 * Demo video: https://youtu.be/N4CM4wZ_6V0
 * Website: https://corearena.xyz/
 * Full detail submission on Dorahack: https://dorahacks.io/buidl/23763/
+* Core Arena Deck: https://docs.google.com/presentation/d/1HOwnLSlCWy-WF1xQ4ppbAZUv7oxR5juXjEd72xXTzLk/edit?usp=sharing
 
 # How to run
 * Navigate to the folder/app directory
