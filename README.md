@@ -24,7 +24,7 @@ Core Arena is a PvP game where players can form squads with any ERC-721 NFT, unl
 
 # Utilizing Core Chain
 * Use $CORE as stake for each battle, winner takes $CORE from loser
-* Utilizing Core Chain transaction speed with high throughput ensuring seamless and efficient interactions such as: creating matches and challenging others instantly, greatly enhancing the gaming experience.
+* Utilizing Core Chain transaction speed with low gas fees ensuring seamless and efficient interactions such as: creating matches and challenging others instantly, greatly enhancing the gaming experience.
 
 # Technical Workflow
 * User chooses 3 NFTs then stakes $CORE to contract to create struct with unique battleID in contract
