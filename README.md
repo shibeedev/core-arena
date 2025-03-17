@@ -35,4 +35,4 @@ Core Arena is a PvP game where players can form squads with any ERC-721 NFT, unl
 # Team
 *  Quan Nguyen: Full-Stack Developer – Leads backend architecture and smart contract implementation.
 *  Duc Nguyen: Smart Contract Developer – Focuses on smart contract optimization and security.
-*  FreakCdev: Front-End Developer & Graphic Designer
+*  FreakCdev: Front-End Developer & Graphic Designer - Create user interface and game assets
