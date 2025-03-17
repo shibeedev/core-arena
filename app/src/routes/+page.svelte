@@ -267,10 +267,10 @@
                         for (const nft of localNFTList) {
                             requests.push((async () => {
                                 const { owner } = await getNFTOwner(nft.collectionAddress, nft.id);
-                                
+                            
                                 if (owner !== userAddress) {
                                     return;
-                                };
+                                }
 
                                 nftList.push(nft);
                                 nftList = nftList;
@@ -282,21 +282,8 @@
                         // Update the new local nft list
                         localStorage.nftList = JSON.stringify(nftList);
                     } catch (e) {
-                        console.log("b", e);
+                        console.log(e);
                     }
-                    /*
-                    const response = await fetch(config.indexerUrl, {
-                        method: "POST",
-                        body: JSON.stringify({
-                            method: "getNFTHoldings",
-                            params: {
-                                address
-                            }
-                        }),
-                        headers: {
-                            "Content-Type": "application/json"
-                        }
-                    });*/
     
                 })();
             } catch (e) {}
@@ -343,11 +330,6 @@
             currentItem += 100;
         }
 
-        
-        //Get activities
-
-
-        //Call 10 NFTS
         if (!done && !loading) {
             loadNFTs(nftList);
         }
@@ -397,14 +379,18 @@
             .nftInfos
             .map(nft => {
                 //Check if NFT has missing attributes
+                if (!nft?.metadata) {
+                    throw new Error(`NFT is not existed`);
+                }
+                // Return a default BasicAttack skill for NFTs that have no attributes
                 if (!nft?.metadata?.attributes?.length) {
-                    throw new Error(`NFT is missing attributes`);
+                    return ["BasicAttack"];
                 }
 
                 const attributes = nft.metadata.attributes;
                 return attributes.map(attribute => attribute["value"]);
             });
-        return attributeList; // Returns array of values from first NFT
+        return attributeList; 
     }
 
     async function fetchSkillData() {
@@ -456,7 +442,7 @@
             
             const responseData = responseBody.payload.data;
             
-            // Handle both array response and ["skillData", spellData] format
+
             if (Array.isArray(responseData)) {
                 if (responseData[0] === "skillData" && Array.isArray(responseData[1])) {
                     skillData.set(responseData[1]);
@@ -2265,8 +2251,11 @@
                         <span class="text-[2vw] text-button mt-[2vw]">
                             Withdraw Rewards
                         </span>
-                        <span class="font-normal mb-[1vw] border rounded-md px-[1vw]">
+                        <span class="font-normal mb-[0.3vw] border rounded-md px-[1vw]">
                             Total withdrawable: <span class="text-button">{calculateTotalWithdrawable(withdrawList)} {config.nativeCurrency.name}</span> 
+                        </span>
+                        <span class="font-normal italic text-[0.8vw]">
+                            Platform Fee is 1%
                         </span>
                         {#if withdrawList?.length >0}
                         <div class="flex flex-col justify-start text-[0.9vw] font-normal gap-[0.2vw] min-h-[10vw] max-h-[10vw] rounded-md p-[1vw] mx-[1vw] overflow-y-scroll bg-black">
