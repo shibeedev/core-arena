@@ -1,5 +1,5 @@
 # Core Arena
-Core Arena is a PvP game where players can form squads with any ERC-721 NFT, unleash unique skills from each NFT trait, and solo others for staked $CORE.
+Core Arena is a PvP game where players can form squads with any ERC-721 NFT, unleash unique auto-generated skills from each NFT trait, and battle others for staked $CORE.
 
 * Website: https://corearena.xyz/
 * Twitter: https://x.com/corearena_xyz
