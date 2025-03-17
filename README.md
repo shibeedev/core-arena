@@ -30,7 +30,7 @@ Core Arena is a PvP game where players can form squads with any ERC-721 NFT, unl
 * User chooses 3 NFTs then stakes $CORE to contract to create struct with unique battleID in contract
 * Backend verifies on-chain data and creates a queue with that battleID and the NFT squad user chose
 * Other user who joins that battleID must deposit the same amount of money to contract and choose 3 NFTs to battle
-* After verifying on-chain, backend processes battle and returns the signature to address who won to withdraw the stake (the contract nonce prevents reuse key and has rule that only defender or attacker can withdraw money)
+* After verifying on-chain, backend processes battle and returns the signature to address who won to withdraw the stake (the contract nonce prevents signature reuse and has rule that only defender or attacker can withdraw money)
 
 # Team
 *  Quan Nguyen: Full-Stack Developer – Leads backend architecture and smart contract implementation.
