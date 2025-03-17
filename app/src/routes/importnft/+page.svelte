@@ -26,7 +26,7 @@
     let attributes = [];
     let tokenURI = "";
     let metadata = {};
-    let owner, price, lister, isSold, collectionName ;
+    let owner, lister, collectionName ;
     let resultSkills = [];
  
 
@@ -226,20 +226,27 @@
         subMitNftContract = subMitNftContract; //For reactive
         subMitNftId= inputId;
         subMitNftId= subMitNftId;  //For reactive
+        
         if (!metadata?.attributes || metadata?.attributes.length === 0) {
-            popupLoading = false;
-            generalError = true;
-            generalErrorValue = "This NFT has no traits, you may want to use another NFTs";
-            return; 
-        }
-
-        if (Array.isArray(metadata.attributes)) {
+            //  create a default skill
+            attributes = [{
+                attribute: "Default",
+                value: "BasicAttack"
+            }];
+            attributes = attributes; // For reactivity in Svelte
+        } else {
+            if (Array.isArray(metadata.attributes)) {
                 for (const attribute of metadata.attributes) {
                     attributes.push({ attribute: attribute["trait_type"], value: attribute["value"] });
                 }
             }
+        }
         attributes = attributes;
         await generateNFTSkill(subMitNftContract, attributes);
+
+
+
+
         if (!resultSkills || resultSkills?.length === 0) {
             popupLoading = false;
             generalError = true;
@@ -374,42 +381,9 @@
                         }
 
                         await Promise.all(requests);
-
-                        // Update the new local nft list
                         localStorage.nftList = JSON.stringify(nftList);
                     } catch (e) {
                         console.log("b", e);
-                    }
-
-                    // Get the nft list from the indexer
-                    const response = await fetch(config.indexerUrl, {
-                        method: "POST",
-                        body: JSON.stringify({
-                            method: "getNFTHoldings",
-                            params: {
-                                address
-                            }
-                        }),
-                        headers: {
-                            "Content-Type": "application/json"
-                        }
-                    });
-
-                    if (response.ok) {
-                        const responseBody = await response.json();
-
-                        for (const nft of responseBody.payload.nftHoldings) {
-                            if (!nftList.find(_nft => nft.collection === _nft.collectionAddress && nft.id.toString() === _nft.id)) {
-                                nftList.push({ collectionAddress: nft.collection, id: nft.id.toString() });
-                            }
-                        }
-
-                    } else {
-                        const responseBody = await response.json();
-
-                        if (responseBody.error && responseBody.error.message) {
-                            throw new Error(responseBody.error.message);
-                        }
                     }
                 })();
             } catch (e) {}
@@ -550,9 +524,15 @@
                                         </div>
                                     {/each}
                                 {:else if attributes?.length >0 && resultSkills?.length >0}
-                                    <span class="text-white text-[1.2vw]">
-                                        Generated Skills Based on NFT Trait Names:
-                                    </span>
+                                    {#if resultSkills[0].attribute == "BasicAttack"}
+                                        <span class="text-buttonHover font-bold text-[1.2vw]">
+                                            This NFT has no traits; default skill is applied.
+                                        </span>
+                                    {:else}
+                                        <span class="text-white text-[1.2vw]">
+                                            Generated Skills Based on NFT Trait Names:
+                                        </span>
+                                    {/if}
                                     <!-- skill-->
                                     {#each resultSkills as resultSkill}
                                         <div class="flex flex-col">
