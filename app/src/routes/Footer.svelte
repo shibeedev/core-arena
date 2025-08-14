@@ -2,81 +2,51 @@
 
     import { goto } from '$app/navigation';
 </script>
-<style>
-.hide-scrollbar {
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none;  /* Firefox */
-}
 
-.hide-scrollbar::-webkit-scrollbar {
-  display: none;  /* Safari and Chrome */
-}
-.orange-text {
-    background-image: linear-gradient(to bottom, #FD8900, #F9BC20);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
-.shrink-self-hover:hover {
-        vertical-align: middle;
-        -webkit-transform: perspective(1px) translateZ(0);
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
-        -webkit-transition-property: transform;
-        transition-property: transform;
-        -webkit-transform: scale(1.3);
-        transform: scale(1.3);
-}
-
-.shrink-self-hover-sm:hover {
-        vertical-align: middle;
-        -webkit-transform: perspective(1px) translateZ(0);
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
-        -webkit-transition-property: transform;
-        transition-property: transform;
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-}
-
-</style>
-<!---->
-<div class="font-Oxanium flex flex-col items-center gap-[30px] py-2 z-30 pt-[30px] sm:mb-0 mb-[0px]">
-    <!--Social link-->
-    <div class="flex items-center gap-[30px]">
-        <button on:click={()=>{window.open("https://x.com/corearena_xyz", "_blank")}} class="flex shrink-self-hover">
-            <img class="inline-block h-[21px]" src="/icons/twitterX.svg" alt="Twitter/X icon"/>
-        </button>
+<div class="flex flex-col px-4">
+    <div class="flex flex-col w-full items-center self-center gap-[4px] py-[20px] z-10">
+        <div class="flex w-full justify-center text-center sm:text-2xl text-normal border-b py-1">
+            JOIN OUR GAMING COMMUNITIES
+        </div>
+        <!--Social link-->
+        <div class="flex py-1 gap-4">
+            <button on:click={()=>{window.open("https://x.com/corearena_xyz", "_blank")}} class="flex shrink-self-hover">
+                <img class="inline-block h-[24px]" src="/icons/twitterX.svg" alt="Twitter/X icon"/>
+            </button>
+                        <button on:click={()=>{window.open(`https://discord.gg/eNXuhN22JX`, "_blank")}} class="flex shrink-self-hover">
+                <img class="inline-block h-[26px]" src="/icons/discord.png" alt="Twitter/X icon"/>
+            </button>
+        </div>
+        <div class="flex pt-2">
+            <button on:click={()=>{window.open("https://corearena.xyz/docs", "_blank")}} class="flex underline shrink-self-hover text-button hover:text-buttonHover text-sm">
+                DOCUMENTATION
+            </button>
+        </div>
     </div>
-</div>
-
-<div class="flex flex-wrap justify-between items-end text-white lg:gap-[30px] gap-[10px] pb-2 z-30 ">
-    <div class="flex flex-col gap-[5px]">
-        <!--Logo-->
-        <button class="flex items-center gap-[5px]" on:click={() =>goto('/')}>
-            <img class="h-10 inline-block" src="/logo.png" alt="Core Arena logo"/>
-            <span class="text-xl font-semibold">
-                Core Arena
+    <div class="flex flex-wrap justify-between items-end text-white lg:gap-[30px] gap-[10px] pb-2 z-30 ">
+        <div class="flex flex-col gap-[8px]">
+            <!--Logo-->
+            <button class="flex items-center gap-[5px]" on:click={() =>goto('/')}>
+                <img class="h-10 inline-block" src="/logo.png" alt="Core Arena logo"/>
+                <span class="text-xl font-semibold">
+                    Core Arena
+                </span>
+            </button>
+            <span class="text-sm">
+                PvP game for any NFTs on Core
             </span>
-        </button>
-        <span class="text-sm">
-            PvP game for NFTs on Core
-        </span>
-    </div>  
-    <div class="flex flex-col gap-[5px] justfity-start items-start">
-        <span class=" ">
-            Contact
-        </span>
-        <span class="text-sm"> gindev229@gmail.com</span>
-        <span class="text-sm"> Submission for Core Global Gaming Hackathon</span>
+        </div>  
+    
+        <div class="flex flex-col gap-[5px] justfity-start items-start">
+            <span class=" ">
+                Contact
+            </span>
+            <span class="text-sm"> contact@corearena.xyz</span>
+        </div>
+    
     </div>
-
-</div>
-<div class="flex flex-wrap justify-center items-end text-lightGray lg:gap-[30px] gap-[10px] pb-2 z-30 ">
-    <span class="text-sm">&copy; 2025 corearena.xyz . All rights reserved.</span>
+    <div class="flex flex-wrap justify-center items-end text-lightGray ml-[32px] pb-2 z-30 ">
+        <span class="text-xs text-center">&copy; 2025 corearena.xyz . All rights reserved.</span>
+    </div>
+    
 </div>
