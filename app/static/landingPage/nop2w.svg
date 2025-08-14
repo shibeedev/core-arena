@@ -1,0 +1,39 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_493_1833)">
+<path d="M50 1.5C76.7858 1.5 98.5 23.2142 98.5 50C98.5 76.7858 76.7858 98.5 50 98.5C23.2142 98.5 1.5 76.7858 1.5 50C1.5 23.2142 23.2142 1.5 50 1.5Z" fill="black" stroke="url(#paint0_linear_493_1833)" stroke-width="2"/>
+<mask id="mask0_493_1833" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="20" y="31" width="60" height="43">
+<path d="M79.4233 31H20.5771V74H79.4233V31Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_493_1833)">
+<mask id="mask1_493_1833" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="20" y="31" width="60" height="43">
+<path d="M79.4233 31H20.5771V74H79.4233V31Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_493_1833)">
+<path d="M73.3663 31H67.9054L33.3193 57.5016L40.6006 63.3907L73.3663 35.4169V31Z" fill="#FCE202"/>
+<path d="M73.3674 31L36.9609 60.4462L40.6016 63.3907L73.3674 35.4169V31Z" fill="#FC9502"/>
+<path d="M29.6768 57.5034L40.5982 66.3368L42.4182 64.8647L31.4968 56.0312L29.6768 57.5034Z" fill="#FCE202"/>
+<path d="M20.5771 64.8637L31.4986 73.6972L33.3186 72.2251L22.3972 63.3916L20.5771 64.8637Z" fill="#FCE202"/>
+<path d="M32.4113 59.709L25.1299 65.5984L30.5913 70.0156L37.8727 64.1262L32.4113 59.709Z" fill="#FC9502"/>
+<path d="M26.04 31V35.4169L58.8058 63.3907L66.0871 57.5016L31.501 31H26.04Z" fill="#FCE202"/>
+<path d="M58.8015 66.3349L69.723 57.5014L67.9029 56.0293L56.9814 64.8628L58.8015 66.3349Z" fill="#FCE202"/>
+<path d="M67.907 73.6962L78.8285 64.8627L77.0084 63.3906L66.0869 72.2241L67.907 73.6962Z" fill="#FCE202"/>
+<path d="M26.04 31L62.4464 60.4462L66.0871 57.5016L31.501 31H26.04Z" fill="#FBAB4C"/>
+<path d="M61.5322 64.1272L68.8137 70.0166L74.2751 65.5993L66.9936 59.71L61.5322 64.1272Z" fill="#FCE202"/>
+<path d="M37.8691 64.1269L32.4082 59.71V68.5438L37.8691 64.1269Z" fill="#FF5B0C"/>
+<path d="M66.9951 59.71L61.5342 64.1269L66.9951 68.5438V59.71Z" fill="#FC9502"/>
+<path d="M43.1133 61.2444L49.7012 55.6202L46.4045 52.8066L43.1133 55.4686V61.2444Z" fill="#FF5B0C"/>
+<path d="M46.4045 52.8068L43.1133 49.9961V55.4687L46.4045 52.8068Z" fill="#FC9502"/>
+<path d="M46.4045 52.8068L43.1133 49.9961V55.4687L46.4045 52.8068Z" fill="#FC9502"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_493_1833" x1="60.7264" y1="9.63558" x2="36.4671" y2="89.4442" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FE6909"/>
+<stop offset="1" stop-color="#FCE202"/>
+</linearGradient>
+<clipPath id="clip0_493_1833">
+<rect width="100" height="100" fill="white"/>
+</clipPath>
+</defs>
+</svg>
