@@ -1,3 +1,6 @@
+@import 'driver.js/dist/driver.css';
+/* Add this to your styles.css file */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -71,6 +74,15 @@
 }
 
 @layer utilities {
+
+    .text-linearOrange2 {
+        background: linear-gradient(to bottom, #FDDA3B, #FC7000);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        display: inline-block;
+      }
+
     .bg-gradient-black-fade {
         background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
     }
@@ -89,6 +101,34 @@
         }
     }
 
+    .strongGlow {
+        animation: strongGlow 3s infinite;
+        box-shadow: rgba(195, 155, 86, 0.9) 0 0 10vw 5vw;
+    }
+
+    @keyframes strongGlow {
+        0%, 100% {
+            box-shadow: #c59d4e 0 0 10vw 12vw; 
+        }
+        50% {
+            box-shadow: #cfcb7b 0 0 12vw 14vw;
+        }
+    }
+
+
+    .strongGlow2 {
+        animation: strongGlow 4s infinite;
+    }
+
+    @keyframes strongGlow2 {
+        0%, 100% {
+            box-shadow: #c59d4e 0 0 3vw 4vw; 
+        }
+        50% {
+            box-shadow: #cfcb7b 0 0 4vw 3vw;
+        }
+    }
+
     @keyframes colorChange {
         0%, 100% {
             background-image: linear-gradient(to bottom, #000000, #493402);
@@ -101,6 +141,15 @@
         50% {
             background-image: linear-gradient(to bottom, #000000, #674a01);
         }
+    }
+
+    .text-game-hall {
+        font-weight: 900;
+        -webkit-text-stroke: 2.5px #4a2400;
+        background-image: linear-gradient(to bottom, #ffffff, #F9BC20);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
 
 
@@ -144,16 +193,14 @@
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
     -webkit-transition-property: transform;
     transition-property: transform;
     }
-    .self-hover:hover ,
-    .self-hover:focus,
-    .self-hover:active .shrink-on-hover {
-        -webkit-transform: scale(1.05);
-        transform: scale(1.05);
+    .self-hover:hover {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
     }
 
     .timerIndicator {
@@ -204,6 +251,38 @@
     animation: float 3s ease-in-out infinite;
     }
 
+    @keyframes floatFixed1 {
+        0% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+        }
+
+    .floatingFixed1 {
+    animation: floatFixed1 3s ease-in-out infinite;
+    }
+
+    
+    @keyframes floatFixed2 {
+        0% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(10px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+        }
+
+    .floatingFixed2 {
+    animation: floatFixed2 3s ease-in-out infinite;
+    }
         @keyframes pulse-width {
     0% {
         transform: scaleX(1);
@@ -422,4 +501,14 @@
     border-image: linear-gradient(0deg, red, rgb(255, 187, 0), red) 1;
     animation: border-glow-rotate 3s linear infinite;
     }
+
+    .hide-scrollbar {
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+      }
+      
+    .hide-scrollbar::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+    }
 }
+

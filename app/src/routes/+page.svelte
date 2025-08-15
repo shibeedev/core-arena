@@ -241,6 +241,7 @@
         
 
 
+        <!--Game criteria page-->
         <div class="flex flex-col relative min-h-screen justify-center sm:my-[20px]">
             <img loading="lazy" class="absolute min-h-full w-full  object-cover object-center" src="/landingPage/bgPage4.webp" alt="Core Arena background"/>
             <h1 class="self-center text-3xl font-bold text-linearOrange2 z-10">

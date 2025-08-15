@@ -3,9 +3,9 @@
   import { derived } from 'svelte/store';
 
   // Default values
-  let defaultTitle = "CORE ARENA - PvP Arena Game for any NFT on CORE";
-  let defaultDescription = "A PvP game for every NFT on CORE: form squads with any ERC-721 NFT, unleash unique skills from each NFT trait, and solo others for staked $CORE";
-  let defaultKeyword = "Core Arena, PvP, Gamefi, Core"
+  let defaultTitle = "CORE ARENA - PvP Game for any NFT on CORE";
+  let defaultDescription = "A PvP game for any NFT on CORE: form squads with any NFT, unleash unique skills from each NFT trait, and solo others for staked CORE";
+  let defaultKeyword = "Core Arena, PvP, Gamefi, NFT, CORE"
   // Base URL for your site
   const baseUrl = "https://corearena.xyz";
 
