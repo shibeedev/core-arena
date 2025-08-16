@@ -8,12 +8,12 @@ Core Arena is a PvP game where players can form squads with any ERC-721 NFT, unl
 ![Create a match](/app/static/screenshot1.png)
 
 # New updates since last Core Global Gaming Hackathon
-🔥 Quest system: daily quest & event quest
-🔥 NFT reward store
-🔥 Bot modes
-🔥 Gamification UI
-🔥 New type of skills
-🔥 Performance boost: 80% faster battle processing
+* 🔥 Quest system: daily quest & event quest
+* 🔥 NFT reward store
+* 🔥 Bot modes
+* 🔥 Gamification UI
+* 🔥 New type of skills
+* 🔥 Performance boost: 80% faster battle processing
 Roadmap and details of upcoming updates at: https://corearena.xyz/docs/vision/
 
 # Contract on Core Mainet:
@@ -48,4 +48,5 @@ Roadmap and details of upcoming updates at: https://corearena.xyz/docs/vision/
 
 # Contact
 **justlearning1235@gmail.com** or **hello.corearena@gmail.com**
+
 
